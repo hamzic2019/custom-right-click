@@ -4,3 +4,101 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
+body {
+    background-color: #1abc9c;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.right-click {
+    display: none;
+    position: absolute;
+    left:150px;
+    width: 350px;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451);
+}
+
+/* STYLE ZA PREVIEW ITEM */
+.preview::before {
+  content:'';
+  position:absolute;
+  width:70px;
+  height:50px;
+  left:10px;
+  top:15px;
+  background-image: url(./assets/view.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+.link::before {
+    content:'';
+    position:absolute;
+    width:70px;
+    height:50px;
+    left:10px;
+    top:15px;
+    background-image: url(./assets/link.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+  }
+
+  .rename::before {
+    content:'';
+    position:absolute;
+    width:70px;
+    height:50px;
+    left:17px;
+    top:15px;
+    background-image: url(./assets/edit.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+  .delete::before {
+    content:'';
+    position:absolute;
+    width:70px;
+    height:50px;
+    left:13px;
+    top:18px;
+    background-image: url(./assets/delete.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+.settings::before {
+    content:'';
+    position:absolute;
+    width:70px;
+    height:50px;
+    left: 16px;px;
+    top:20px;
+    background-image: url(./assets/setting.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+
+.settings {
+    border-top: 1px solid rgba(102, 102, 102, 0.359);
+}
+
+
+.item {
+    font-size:25px;
+    font-weight: 500;
+    padding:20px 10px;
+    position: relative;
+    padding-left: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.item:hover {
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
